@@ -196,207 +196,287 @@
       <p>© 2026 Tống Thiên Lý. Thiết kế &amp; xây dựng bằng HTML5 + CSS3.</p>
       <a href="#top" class="to-top">↑ Lên đầu trang</a>
     </div>
-  </footer>
-<section class="contact-section" id="contact">
-  <div class="contact-particles"></div>
+  </footer><!-- CONTACT GIRLY -->
+<section class="girl-contact" id="contact">
+  <div class="girl-decor">🌸</div>
+  <div class="girl-decor decor-two">🦋</div>
+  <div class="girl-decor decor-three">💕</div>
+  <div class="girl-decor decor-four">🌷</div>
 
-  <div class="contact-content">
-    <span class="contact-label">LET'S CONNECT</span>
-    <h2>LIÊN HỆ VỚI TÔI</h2>
-    <p class="contact-desc">
-      Bạn có điều gì muốn chia sẻ?
-      Đừng ngần ngại gửi lời nhắn cho tôi nhé!
+  <div class="girl-inner">
+    <div class="girl-tag">♡ A LITTLE HELLO ♡</div>
+
+    <h2>Let's Be Friends!</h2>
+    <p class="girl-sub">
+      Một lời chào nhỏ, một kết nối xinh xắn.
+      Rất vui nếu được trò chuyện cùng bạn! 💗
     </p>
 
-    <div class="contact-grid">
-      <a href="mailto:yourmail@gmail.com" class="contact-card">
-        <span>📧</span>
-        <h3>Email</h3>
-        <p>Gửi thư cho tôi</p>
-      </a>
-
-      <a href="https://www.facebook.com/" target="_blank"
-         class="contact-card">
-        <span>💙</span>
+    <div class="girl-socials">
+      <a href="https://facebook.com/" target="_blank"
+         class="girl-card">
+        <span>💌</span>
         <h3>Facebook</h3>
-        <p>Kết nối với tôi</p>
+        <p>Let's connect!</p>
       </a>
 
-      <a href="https://zalo.me/" target="_blank"
-         class="contact-card">
-        <span>💬</span>
+      <a href="mailto:yourmail@gmail.com"
+         class="girl-card">
+        <span>🎀</span>
+        <h3>Email</h3>
+        <p>Send me a letter</p>
+      </a>
+
+      <a href="https://zalo.me/"
+         target="_blank" class="girl-card">
+        <span>🐰</span>
         <h3>Zalo</h3>
-        <p>Nhắn tin trực tiếp</p>
+        <p>Chat with me!</p>
       </a>
     </div>
 
-    <form class="contact-form" id="contactForm">
-      <input type="text" placeholder="Tên của bạn" required>
-      <input type="email" placeholder="Email của bạn" required>
-      <textarea placeholder="Nội dung lời nhắn..." required></textarea>
-      <button type="submit">GỬI LỜI NHẮN ✨</button>
-      <p id="contactMessage"></p>
-    </form>
+    <div class="girl-form-box">
+      <div class="girl-form-title">
+        💗 Gửi cho mình một lời nhắn nhé!
+      </div>
 
-    <div class="contact-footer">
-      © 2026 NGÔ MẠNH DŨNG | THANK YOU FOR VISITING ❤️
+      <form id="girlForm">
+        <input type="text" placeholder="Tên của bạn là..." required>
+        <input type="email" placeholder="Email của bạn..." required>
+        <textarea placeholder="Bạn muốn nhắn gì với mình? 🌷"
+          required></textarea>
+        <button type="submit">Send Love 💕</button>
+      </form>
+
+      <p id="girlMessage"></p>
+    </div>
+
+    <div class="girl-end">
+      Made with ♡ and a little bit of magic
+      <br>Thank you for visiting my little world!
     </div>
   </div>
 </section>
 
 <style>
-.contact-section {
+.girl-contact {
   position: relative;
   overflow: hidden;
-  padding: 90px 20px 35px;
-  background: linear-gradient(135deg,#06152d,#092d50,#061326);
-  color: white;
+  padding: 85px 20px 35px;
+  background: linear-gradient(135deg,
+    #fff0f5, #fce4ec, #eee4ff, #fff5f8);
+  color: #a64d79;
   text-align: center;
+  font-family: Arial, sans-serif;
 }
 
-.contact-content {
+.girl-inner {
   position: relative;
   z-index: 2;
   max-width: 850px;
   margin: auto;
-  animation: contactAppear 1.2s ease;
+  animation: girlEnter 1.2s ease;
 }
 
-.contact-label {
-  color: #42d9ff;
-  letter-spacing: 5px;
-  font-size: 13px;
+.girl-tag {
+  display: inline-block;
+  background: white;
+  border-radius: 30px;
+  padding: 10px 22px;
+  color: #df82aa;
+  letter-spacing: 3px;
+  font-size: 12px;
 }
 
-.contact-section h2 {
-  font-size: clamp(28px,5vw,45px);
-  margin: 15px 0;
-  text-shadow: 0 0 20px #00bfff;
+.girl-contact h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(38px, 6vw, 58px);
+  color: #e78bb2;
+  margin: 22px 0 12px;
+  text-shadow: 2px 3px 10px #f7c6dc;
 }
 
-.contact-desc {
-  color: #b9d6ec;
+.girl-sub {
+  color: #a77a94;
+  line-height: 1.8;
   margin-bottom: 35px;
 }
 
-.contact-grid {
+.girl-socials {
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap: 18px;
 }
 
-.contact-card {
-  padding: 25px 12px;
-  border: 1px solid #2c8fba;
-  border-radius: 18px;
-  background: rgba(255,255,255,.06);
-  color: white;
+.girl-card {
+  display: block;
   text-decoration: none;
+  color: #bd7296;
+  background: rgba(255,255,255,.8);
+  padding: 28px 12px;
+  border-radius: 25px;
+  border: 1px solid white;
+  box-shadow: 0 8px 25px #eab8d055;
   transition: .4s;
-  animation: floating 3s ease-in-out infinite;
+  animation: girlFloat 3s ease-in-out infinite;
 }
 
-.contact-card:nth-child(2) {
-  animation-delay: .4s;
+.girl-card:nth-child(2) {
+  animation-delay: .5s;
 }
-.contact-card:nth-child(3) {
-  animation-delay: .8s;
+.girl-card:nth-child(3) {
+  animation-delay: 1s;
 }
 
-.contact-card:hover {
+.girl-card:hover {
   transform: translateY(-12px) scale(1.05);
-  background: rgba(0,180,255,.2);
-  box-shadow: 0 0 25px #00aaff;
+  box-shadow: 0 12px 30px #e58dbb88;
+  background: white;
 }
 
-.contact-card span {
-  font-size: 35px;
+.girl-card span {
+  font-size: 38px;
 }
 
-.contact-card h3 {
+.girl-card h3 {
   margin: 12px 0 5px;
 }
 
-.contact-card p {
-  color: #a9d6ed;
+.girl-card p {
   font-size: 13px;
+  color: #c18da8;
 }
 
-.contact-form {
-  margin: 35px auto;
+.girl-form-box {
+  background: rgba(255,255,255,.8);
+  padding: 30px;
+  margin: 38px auto;
   max-width: 550px;
+  border-radius: 28px;
+  box-shadow: 0 10px 35px #e9b4d055;
+}
+
+.girl-form-title {
+  font-size: 20px;
+  color: #d77da7;
+  margin-bottom: 20px;
+}
+
+#girlForm {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 14px;
 }
 
-.contact-form input,
-.contact-form textarea {
+#girlForm input,
+#girlForm textarea {
+  width: 100%;
+  box-sizing: border-box;
   padding: 15px;
-  border: 1px solid #2788b5;
-  border-radius: 12px;
-  background: rgba(255,255,255,.08);
-  color: white;
+  border: 1px solid #f5d0e0;
+  border-radius: 15px;
+  background: #fff9fc;
+  color: #a64d79;
   outline: none;
+  font-family: inherit;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-  box-shadow: 0 0 15px #00bfff;
+#girlForm input:focus,
+#girlForm textarea:focus {
+  border-color: #e88db7;
+  box-shadow: 0 0 12px #f3c5db;
 }
 
-.contact-form textarea {
-  min-height: 120px;
+#girlForm textarea {
+  min-height: 110px;
   resize: vertical;
 }
 
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-  color: #a9c8dd;
-}
-
-.contact-form button {
-  padding: 15px;
+#girlForm button {
   border: none;
+  padding: 15px;
   border-radius: 30px;
   color: white;
+  background: linear-gradient(90deg,#f3a2c4,#c9a3ee);
+  font-size: 15px;
   font-weight: bold;
-  background: linear-gradient(90deg,#0878c9,#00c6ff);
   cursor: pointer;
   transition: .3s;
 }
 
-.contact-form button:hover {
+#girlForm button:hover {
   transform: scale(1.04);
-  box-shadow: 0 0 25px #00bfff;
+  box-shadow: 0 5px 20px #e8a5c9;
 }
 
-.contact-footer {
+#girlMessage {
+  color: #c66b9b;
+}
+
+.girl-end {
+  color: #c38ba8;
+  font-size: 13px;
+  line-height: 2;
   margin-top: 35px;
-  color: #7faac5;
-  font-size: 12px;
 }
 
-@keyframes floating {
+.girl-decor {
+  position: absolute;
+  font-size: 35px;
+  animation: decorFloat 5s ease-in-out infinite;
+  opacity: .7;
+  pointer-events: none;
+}
+
+.decor-two {
+  top: 22%;
+  right: 9%;
+  animation-delay: 1s;
+}
+
+.decor-three {
+  top: 55%;
+  left: 5%;
+  animation-delay: 2s;
+}
+
+.decor-four {
+  bottom: 10%;
+  right: 7%;
+  animation-delay: 3s;
+}
+
+@keyframes girlFloat {
   0%,100% { transform: translateY(0); }
   50% { transform: translateY(-9px); }
 }
 
-@keyframes contactAppear {
-  from { opacity: 0; transform: translateY(45px); }
+@keyframes decorFloat {
+  0%,100% { transform: translateY(0) rotate(-10deg); }
+  50% { transform: translateY(-25px) rotate(15deg); }
+}
+
+@keyframes girlEnter {
+  from { opacity: 0; transform: translateY(35px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
 @media(max-width:600px) {
-  .contact-grid { grid-template-columns: 1fr; }
+  .girl-socials {
+    grid-template-columns: 1fr;
+  }
+  .girl-form-box {
+    padding: 20px;
+  }
 }
 </style>
 
 <script>
-document.getElementById("contactForm").addEventListener("submit", function(e) {
+document.getElementById("girlForm").addEventListener("submit", function(e) {
   e.preventDefault();
-  document.getElementById("contactMessage").textContent =
-    "Cảm ơn bạn! Biểu mẫu hiện chưa được kết nối gửi email.";
+  document.getElementById("girlMessage").textContent =
+    "Cảm ơn bạn đã gửi lời nhắn! Chúc bạn một ngày thật xinh đẹp 💗";
+  this.reset();
 });
 </script>
 </body>
